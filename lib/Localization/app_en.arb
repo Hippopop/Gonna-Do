@@ -1,0 +1,11 @@
+{
+    "@@locale": "en",
+    "appTitle": "Gonna Do With Flutter",
+    "@appTitle": {
+      "description": "The title for the app"
+    },
+
+    "account": "User Account"
+}
+
+
