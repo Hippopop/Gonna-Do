@@ -1,13 +1,14 @@
 class GonnaDo {
+  
   String title;
   String? desc;
   DateTime? date;
   DateTime? time;
-  bool status;
+  bool status = false;
   bool alarm;
   Priority priority;
 
-  
+  GonnaDo({required this.title, required this.priority, required this.alarm});
 }
 
 enum Priority {
