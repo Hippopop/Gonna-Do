@@ -1,4 +1,7 @@
+// ignore_for_file: prefer_const_constructors, require_trailing_commas, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
+import 'package:gonna_do/Source/Widgets/custom_dropdown_btn.dart';
 
 class AllGonnaDoPage extends StatefulWidget {
   const AllGonnaDoPage({Key? key}) : super(key: key);
@@ -45,41 +48,11 @@ class _AllGonnaDoPageState extends State<AllGonnaDoPage> {
                         child: Container(),
                       ),
                       Expanded(
-                        child: Container(
-                          child: DropdownButtonHideUnderline(
-                            child: DropdownButton<int>(
-                              focusColor: Colors.amber,
-                              isDense: true,
-                              //value: 2,
-                              alignment: Alignment.center,
-                              isExpanded: true,
-                              //focusColor: Colors.green,
-                              icon: const Icon(Icons.abc_outlined),
-                              items: const [
-                                DropdownMenuItem<int>(
-                                  value: 2,
-                                  //enabled: true,
-                                  child: Text('hi'),
-                                ),
-                                DropdownMenuItem<int>(
-                                  child: Text('hi'),
-                                  value: 3,
-                                ),
-                                DropdownMenuItem<int>(
-                                  child: Text('hi'),
-                                  value: 4,
-                                ),
-                              ],
-                              onChanged: (index) {
-                                setState(() {});
-                              },
-                            ),
-                          ),
-                        ),
+                        child: CustomDropdownButton(),
                       ),
                     ],
                   ),
-                )
+                ),
               ],
             ),
           ),
@@ -88,3 +61,37 @@ class _AllGonnaDoPageState extends State<AllGonnaDoPage> {
     );
   }
 }
+
+// Container(
+//                           child: DropdownButtonHideUnderline(
+//                             child: DropdownButton<int>(
+
+//                               focusColor: Colors.amber,
+//                               isDense: true,
+//                               //value: 2,
+//                               alignment: Alignment.center,
+//                               isExpanded: true,
+//                               //focusColor: Colors.green,
+//                               icon: const Icon(Icons.abc_outlined),
+//                               items: const [
+//                                 DropdownMenuItem<int>(
+//                                   value: 2,
+//                                   //enabled: true,
+//                                   child: Text('hi'),
+//                                 ),
+//                                 DropdownMenuItem<int>(
+//                                   child: Text('hi'),
+//                                   value: 3,
+//                                 ),
+//                                 DropdownMenuItem<int>(
+//                                   child: Text('hi'),
+//                                   value: 4,
+//                                 ),
+//                               ],
+//                               onChanged: (index) {
+//                                 setState(() {});
+//                               },
+//                             ),
+//                           ),
+//                         ),
+

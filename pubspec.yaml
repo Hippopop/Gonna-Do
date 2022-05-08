@@ -3,7 +3,7 @@ description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -35,16 +35,19 @@ dependencies:
   bottom_navy_bar: ^6.0.0
   animations: ^2.0.2
   intl: ^0.17.0
-  flutter_localizations: 
+  flutter_localizations:
     sdk: flutter
     version: ^0.0.0
   badges: ^2.0.2
   uuid: ^3.0.6
 
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_native_splash: ^2.1.6
+flutter_native_splash:
+  color: "#0a0a0a"
+  image: Assets/images/SplashScreen/splash_logo.png
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -57,7 +60,6 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
